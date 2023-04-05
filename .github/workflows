@@ -1,1 +1,13 @@
+name: My first workflow
+on: [push]
 
+jobs: 
+  run_command:
+    run_on: ubuntu-latest
+    steps:
+      -  name: run echo command
+         run: echo "Hello World"
+      -  name: run multiple commands
+        run:  | 
+         echo "Hello World"
+         echo "This is Miika"
