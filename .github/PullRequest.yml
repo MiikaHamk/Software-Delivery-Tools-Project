@@ -40,7 +40,7 @@ jobs:
       issues: write
     steps:
       - name: Comment on pull request
-        if: github.event_name == 'pull_request' && github.event.number == 1
+        if: github.event_name == 'pull_request'
         uses: peter-evans/create-or-update-comment@v1
         with:
           issue-number: ${{ github.event.pull_request.issue_url | replace('/pulls/', '/issues/') }}
