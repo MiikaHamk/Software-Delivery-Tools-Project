@@ -1,0 +1,17 @@
+name: My first workflow
+on: [push] # the event that triggers this workflow - in this case, a push to the default...
+
+jobs: # the jobs that run in this workflow
+  run_command: # the name of the job
+    run_on: ubuntu-latest # the type of machine to run the job on, in this case the....
+    steps: # the invidual steps of the job
+      - name: run echo command # the name of the step
+        run: echo "Hello World" # the command(s) to run in this step, in this casejust...
+      - name: run multiple commands # the name of the step
+        run:  | #the command(s) to run in this step, in this case multiple commands...
+         echo "Hello World" # the first command that prints "Hello World"
+         echo "This is Tiim" #the second command that prints "This is Tiim"
+         echo "oon tää kissa :3"
+      - name: run date command
+
+
